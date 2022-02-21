@@ -1,7 +1,7 @@
-package dev.lcastrooliveira.resilence4jdemo.client.services
+package client.services
 
-import dev.lcastrooliveira.resilence4jdemo.client.models.DemoData
-import dev.lcastrooliveira.resilence4jdemo.client.models.Response
+import client.models.DemoData
+import client.models.Response
 import org.springframework.boot.web.client.RestTemplateBuilder
 import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.HttpMethod
@@ -18,7 +18,7 @@ class FallbackProviderService(restTemplateBuilder: RestTemplateBuilder) {
 
     fun getDemoData(): DemoData =
         restTemplate.exchange(
-            "${ROOT_URL}/demo-data",
+            "$ROOT_URL/demo-data",
             HttpMethod.GET,
             null,
             object: ParameterizedTypeReference<Response<DemoData>>() {}

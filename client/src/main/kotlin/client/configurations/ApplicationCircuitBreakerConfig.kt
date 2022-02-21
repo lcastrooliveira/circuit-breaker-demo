@@ -1,4 +1,4 @@
-package dev.lcastrooliveira.resilence4jdemo.client.configurations
+package client.configurations
 
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig
 import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry

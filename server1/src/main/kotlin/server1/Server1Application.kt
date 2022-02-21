@@ -1,11 +1,11 @@
-package dev.lcastrooliveira.resilence4jdemo.client
+package server1
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ClientApplication
+class Server1Application
 
 fun main(args: Array<String>) {
-	runApplication<ClientApplication>(*args)
+	runApplication<Server1Application>(*args)
 }

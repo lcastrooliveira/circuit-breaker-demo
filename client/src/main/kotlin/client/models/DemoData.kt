@@ -1,4 +1,4 @@
-package dev.lcastrooliveira.resilence4jdemo.client.models
+package client.models
 
 import java.time.Instant
 

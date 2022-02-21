@@ -1,9 +1,9 @@
-package dev.lcastrooliveira.resilence4jdemo.client.controllers
+package client.controllers
 
-import dev.lcastrooliveira.resilence4jdemo.client.models.DemoData
-import dev.lcastrooliveira.resilence4jdemo.client.models.Response
-import dev.lcastrooliveira.resilence4jdemo.client.services.FallbackProviderService
-import dev.lcastrooliveira.resilence4jdemo.client.services.MainProviderService
+import client.models.DemoData
+import client.models.Response
+import client.services.FallbackProviderService
+import client.services.MainProviderService
 import io.github.resilience4j.circuitbreaker.CircuitBreaker
 import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry
 import io.vavr.control.Try
